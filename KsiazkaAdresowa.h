@@ -16,12 +16,10 @@ class KsiazkaAdresowa {
 
 public:
     KsiazkaAdresowa(string nazwaPlikuZUzytkownikami, string nazwaPlikuZAdresatami)
-    : uzytkownikMenedzer(nazwaPlikuZUzytkownikami), NAZWA_PLIKU_Z_ADRESATAMI(nazwaPlikuZAdresatami)
-    {
+        : uzytkownikMenedzer(nazwaPlikuZUzytkownikami), NAZWA_PLIKU_Z_ADRESATAMI(nazwaPlikuZAdresatami) {
         adresatMenedzer = NULL;
     };
-    ~KsiazkaAdresowa()
-    {
+    ~KsiazkaAdresowa() {
         delete adresatMenedzer;
         adresatMenedzer = NULL;
     };
@@ -38,5 +36,6 @@ public:
     void wyswietlWszystkichAdresatow();
     void wyszukajAdresatowPoImieniu();
     void wyszukajAdresatowPoNazwisku();
+    void usunAdresata();
 };
 #endif
