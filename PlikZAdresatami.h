@@ -32,5 +32,8 @@ public:
     bool dopiszAdresataDoPliku(Adresat adresat);
     int pobierzIdOstatniegoAdresata();
     void wyswietlIloscWyszukanychAdresatow(int iloscAdresatow);
+    void usunWybranegoAdresataZPliku(int idUsuwanegoAdresata);
+    void usunPlik(string nazwaPlikuZRozszerzeniem);
+    void zmienNazwePliku(string staraNazwa, string nowaNazwa);
 };
 #endif

@@ -101,3 +101,11 @@ void KsiazkaAdresowa::wyszukajAdresatowPoNazwisku()
         adresatMenedzer->wyszukajAdresatowPoNazwisku();
     }
 }
+void KsiazkaAdresowa::usunAdresata()
+{
+    if (uzytkownikMenedzer.czyUzytkownikJestZalogowany())
+    {
+        adresatMenedzer->usunAdresata();
+    }
+}
+
