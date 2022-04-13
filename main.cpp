@@ -30,7 +30,7 @@ int main() {
             }
         } else {
             if (ksiazkaAdresowa.czyUzytkownikJestZalogowany())
-               // ksiazkaAdresowa.wczytajAdresatowZalogowanegoUzytkownikaZPliku();
+
             wybor = ksiazkaAdresowa.wybierzOpcjeZMenuUzytkownika();
 
             switch (wybor) {
@@ -40,9 +40,9 @@ int main() {
             case '2':
                 ksiazkaAdresowa.wyszukajAdresatowPoImieniu();
                 break;
-           /* case '3':
-                wyszukajAdresatowPoNazwisku(adresaci);
-                break;*/
+            case '3':
+                ksiazkaAdresowa.wyszukajAdresatowPoNazwisku();
+                break;
             case '4':
                 ksiazkaAdresowa.wyswietlWszystkichAdresatow();
                 break;

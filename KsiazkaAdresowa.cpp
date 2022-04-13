@@ -94,3 +94,10 @@ void KsiazkaAdresowa::wyszukajAdresatowPoImieniu()
         adresatMenedzer->wyszukajAdresatowPoImieniu();
     }
 }
+void KsiazkaAdresowa::wyszukajAdresatowPoNazwisku()
+{
+    if (uzytkownikMenedzer.czyUzytkownikJestZalogowany())
+    {
+        adresatMenedzer->wyszukajAdresatowPoNazwisku();
+    }
+}
