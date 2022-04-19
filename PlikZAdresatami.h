@@ -15,7 +15,6 @@ class PlikZAdresatami {
 
     const string NAZWA_PLIKU_Z_ADRESATAMI;
     int idOstatniegoAdresata;
-    fstream plikTekstowy;
     string zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(Adresat adresat);
     Adresat pobierzDaneAdresata(string daneAdresataOddzielonePionowymiKreskami);
     int pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
