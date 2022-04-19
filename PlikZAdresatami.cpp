@@ -213,6 +213,7 @@ void PlikZAdresatami::usunWybranegoAdresataZPliku(int idUsuwanegoAdresata) {
 
         usunPlik(NAZWA_PLIKU_Z_ADRESATAMI);
         zmienNazwePliku(nazwaTymczasowegoPlikuZAdresatami, NAZWA_PLIKU_Z_ADRESATAMI);
+
     }
 }
 void PlikZAdresatami::usunPlik(string nazwaPlikuZRozszerzeniem)
