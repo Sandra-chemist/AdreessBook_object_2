@@ -34,5 +34,9 @@ public:
     void usunWybranegoAdresataZPliku(int idUsuwanegoAdresata);
     void usunPlik(string nazwaPlikuZRozszerzeniem);
     void zmienNazwePliku(string staraNazwa, string nowaNazwa);
+    void zaktualizujDaneWybranegoAdresata(Adresat adresat, int idEdytowanegoAdresata);
+    int zwrocNumerLiniiSzukanegoAdresata(int idAdresata);
+    void edytujWybranaLinieWPliku(int numerEdytowanejLinii, string liniaZDanymiAdresataOddzielonePionowymiKreskami);
 };
+
 #endif
