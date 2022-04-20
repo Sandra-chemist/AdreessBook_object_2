@@ -24,7 +24,6 @@ class PlikZAdresatami : public PlikTekstowy
 public:
 
     PlikZAdresatami(string nazwaPliku) : PlikTekstowy(nazwaPliku) {};
-  //  void dopisz(string tekst);
     vector <Adresat> wczytajAdresatowZalogowanegoUzytkownikaZPliku(int idZalogowanegoUzytkownika);
     void wyswietlDaneAdresata(Adresat adresat);
     bool dopiszAdresataDoPliku(Adresat adresat);

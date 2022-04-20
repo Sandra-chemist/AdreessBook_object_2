@@ -1,29 +1,24 @@
 #include "MetodyPomocnicze.h"
 
-string MetodyPomocnicze::konwersjaIntNaString(int liczba)
-{
+string MetodyPomocnicze::konwersjaIntNaString(int liczba) {
     ostringstream ss;
     ss << liczba;
     string str = ss.str();
     return str;
 }
-string MetodyPomocnicze::wczytajLinie()
-{
+string MetodyPomocnicze::wczytajLinie() {
     string wejscie = "";
     getline(cin, wejscie);
     return wejscie;
 }
-char MetodyPomocnicze::wczytajZnak()
-{
+char MetodyPomocnicze::wczytajZnak() {
     string wejscie = "";
     char znak  = {0};
 
-    while (true)
-    {
+    while (true) {
         getline(cin, wejscie);
 
-        if (wejscie.length() == 1)
-        {
+        if (wejscie.length() == 1) {
             znak = wejscie[0];
             break;
         }
@@ -31,30 +26,25 @@ char MetodyPomocnicze::wczytajZnak()
     }
     return znak;
 }
-int MetodyPomocnicze::konwersjaStringNaInt(string liczba)
-{
+int MetodyPomocnicze::konwersjaStringNaInt(string liczba) {
     int liczbaInt;
     istringstream iss(liczba);
     iss >> liczbaInt;
 
     return liczbaInt;
 }
-string MetodyPomocnicze::zamienPierwszaLitereNaDuzaAPozostaleNaMale(string tekst)
-{
-    if (!tekst.empty())
-    {
+string MetodyPomocnicze::zamienPierwszaLitereNaDuzaAPozostaleNaMale(string tekst) {
+    if (!tekst.empty()) {
         transform(tekst.begin(), tekst.end(), tekst.begin(), ::tolower);
         tekst[0] = toupper(tekst[0]);
     }
     return tekst;
 }
-int MetodyPomocnicze::wczytajLiczbeCalkowita()
-{
+int MetodyPomocnicze::wczytajLiczbeCalkowita() {
     string wejscie = "";
     int liczba = 0;
 
-    while (true)
-    {
+    while (true) {
         getline(cin, wejscie);
 
         stringstream myStream(wejscie);
