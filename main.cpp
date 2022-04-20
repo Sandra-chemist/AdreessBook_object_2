@@ -31,7 +31,7 @@ int main() {
         } else {
             if (ksiazkaAdresowa.czyUzytkownikJestZalogowany())
 
-            wybor = ksiazkaAdresowa.wybierzOpcjeZMenuUzytkownika();
+                wybor = ksiazkaAdresowa.wybierzOpcjeZMenuUzytkownika();
 
             switch (wybor) {
             case '1':
@@ -47,11 +47,11 @@ int main() {
                 ksiazkaAdresowa.wyswietlWszystkichAdresatow();
                 break;
             case '5':
-               ksiazkaAdresowa.usunAdresata();
-                 break;
-             case '6':
-                 ksiazkaAdresowa.edytujAdresata();
-                 break;
+                ksiazkaAdresowa.usunAdresata();
+                break;
+            case '6':
+                ksiazkaAdresowa.edytujAdresata();
+                break;
             case '7':
                 ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika();
                 break;
